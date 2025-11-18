@@ -2,6 +2,10 @@
 
 Простое приложение чата на основе WebSocket с использованием Node.js, Express и ws.
 
+## Репозиторий
+
+GitHub: [https://github.com/Salamander5876/demo_site](https://github.com/Salamander5876/demo_site)
+
 ## Возможности
 
 - Вход с выбором никнейма
@@ -56,7 +60,7 @@ sudo apt install -y git
 Вариант 1 - Клонирование из Git:
 ```bash
 cd /var/www
-sudo git clone <URL_вашего_репозитория> websocket-chat
+sudo git clone https://github.com/Salamander5876/demo_site.git websocket-chat
 cd websocket-chat
 ```
 
