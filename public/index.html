@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="screen active">
+        <div class="login-container">
+            <h1>WebSocket Chat</h1>
+            <div class="login-form">
+                <input
+                    type="text"
+                    id="nicknameInput"
+                    placeholder="Введите ваш ник"
+                    maxlength="20"
+                    autocomplete="off"
+                >
+                <button id="joinButton">Присоединиться</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Screen -->
+    <div id="chatScreen" class="screen">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>WebSocket Chat</h2>
+                <div class="user-info">
+                    <span id="currentNickname"></span>
+                    <span class="separator">|</span>
+                    <span id="userCount">0 пользователей</span>
+                </div>
+            </div>
+
+            <div id="messagesContainer" class="messages-container">
+                <!-- Messages will be added here -->
+            </div>
+
+            <div class="message-input-container">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Введите сообщение..."
+                    maxlength="500"
+                    autocomplete="off"
+                >
+                <button id="sendButton">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
